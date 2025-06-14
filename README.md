@@ -1,12 +1,73 @@
-# React + Vite
+# Movie Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based movie search application that allows users to discover and search for movies using the TMDB API. The application features a clean, responsive design with real-time search functionality and trending movies section.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live application: [Moviskape](https://moviskape.netlify.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Real-time movie search with debouncing
+- 🎬 Trending movies section
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Fast and responsive design
+- 🔄 Integration with TMDB API
+- 📊 Search analytics tracking
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
+- Appwrite (for backend services)
+- TMDB API
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- TMDB API key
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd my-first-react-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file in the root directory and add your TMDB API key:
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── assets/         # Static assets
+├── components/     # React components
+├── App.jsx        # Main application component
+├── main.jsx       # Application entry point
+├── appwrite.js    # Appwrite configuration
+└── index.css      # Global styles
+```
